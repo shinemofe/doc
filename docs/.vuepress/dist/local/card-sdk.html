@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>卡片容器 | 讯盟IOC小程序开发手册</title>
+    <meta name="generator" content="VuePress 1.5.1">
+    
+    <meta name="description" content="讯盟IOC小程序开发手册">
+    <link rel="preload" href="/assets/css/0.styles.bf66e096.css" as="style"><link rel="preload" href="/assets/js/app.24af8628.js" as="script"><link rel="preload" href="/assets/js/2.a6fab530.js" as="script"><link rel="preload" href="/assets/js/12.72a6c226.js" as="script"><link rel="prefetch" href="/assets/js/10.7227c5dc.js"><link rel="prefetch" href="/assets/js/11.d7d3c746.js"><link rel="prefetch" href="/assets/js/13.a2b7d97e.js"><link rel="prefetch" href="/assets/js/14.1bc32875.js"><link rel="prefetch" href="/assets/js/15.1782b0fd.js"><link rel="prefetch" href="/assets/js/3.5280f414.js"><link rel="prefetch" href="/assets/js/4.4de4e473.js"><link rel="prefetch" href="/assets/js/5.72c06175.js"><link rel="prefetch" href="/assets/js/6.0ad3b4bd.js"><link rel="prefetch" href="/assets/js/7.65c3c7a1.js"><link rel="prefetch" href="/assets/js/8.abea616a.js"><link rel="prefetch" href="/assets/js/9.5c1152a0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bf66e096.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">讯盟IOC小程序开发手册</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://mp.neitherzhu.now.sh/index.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  小程序SDK文档
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/shinemofe/doc" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Git地址
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://mp.neitherzhu.now.sh/index.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  小程序SDK文档
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/shinemofe/doc" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Git地址
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">总览</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>本地开发</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/local/base.html" class="sidebar-link">开发基础组件</a></li><li><a href="/local/card-sdk.html" aria-current="page" class="active sidebar-link">卡片容器</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/local/card.html" class="sidebar-link">开发业务卡片</a></li><li><a href="/local/mp.html" class="sidebar-link">开发小程序</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>发布</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/build/base.html" class="sidebar-link">基础组件</a></li><li><a href="/build/card-sdk.html" class="sidebar-link">卡片容器</a></li><li><a href="/build/card.html" class="sidebar-link">业务卡片</a></li><li><a href="/build/mp.html" class="sidebar-link">小程序</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>组件更新</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/update/" class="sidebar-link">更新说明</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="卡片容器"><a href="#卡片容器" class="header-anchor">#</a> 卡片容器</h1> <p>卡片容器提供一套默认的方案：UI 和 js API，可以用来支撑完整的业务流程。如果想要自定义 UI ，可直接复用 js 开放的能力。</p> <h3 id="卡片容器内置组件"><a href="#卡片容器内置组件" class="header-anchor">#</a> 卡片容器内置组件</h3> <p>内置操作以组件形式（提供了文案、图标、大小）</p> <table><thead><tr><th style="text-align:center;">组件名</th> <th style="text-align:center;">props</th> <th style="text-align:center;">events</th></tr></thead> <tbody><tr><td style="text-align:center;">xmcard-sub-unsub</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">xmcard-red</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">xmcard-urge</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">xmcard-sign</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">xmcard-call</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">xmcard-share</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">xmcard-warn</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">xmcard-data</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">xmcard-monitor</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr></tbody></table> <p>这是零碎的，当然我们也提供聚合式的 panel</p> <table><thead><tr><th style="text-align:center;">组件名</th> <th style="text-align:center;">props</th> <th style="text-align:center;">events</th></tr></thead> <tbody><tr><td style="text-align:center;">xmcard-panel</td> <td style="text-align:center;"></td> <td style="text-align:center;"></td></tr></tbody></table> <h3 id="卡片容器-js-api"><a href="#卡片容器-js-api" class="header-anchor">#</a> 卡片容器 js API</h3> <p>如果你需要深度定制， UI 层可以自己写，我们提供了方法调用</p> <table><thead><tr><th style="text-align:center;">模块</th> <th style="text-align:center;">方法名</th> <th style="text-align:center;">参数</th></tr></thead> <tbody><tr><td style="text-align:center;">重新加载</td> <td style="text-align:center;">[卡片实例].reload()</td> <td style="text-align:center;">用来控制当前卡片重新加载</td></tr> <tr><td style="text-align:center;">订阅</td> <td style="text-align:center;">[卡片实例].subscribe()</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">取消订阅</td> <td style="text-align:center;">[卡片实例].unsubscribe()</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">发起红灯</td> <td style="text-align:center;">[卡片实例].createRedlight()</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">发起督办</td> <td style="text-align:center;">[卡片实例].createUrge()</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">圈阅</td> <td style="text-align:center;">[卡片实例].createSign()</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">一键联系</td> <td style="text-align:center;">[卡片实例].call()</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">分享卡片</td> <td style="text-align:center;">[卡片实例].share()</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">发起预警</td> <td style="text-align:center;">[卡片实例].createWarning()</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">查看数据来源</td> <td style="text-align:center;">[卡片实例].toDataFrom()</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">查看视频监控</td> <td style="text-align:center;">[卡片实例].openMonitor()</td> <td style="text-align:center;"></td></tr></tbody></table> <h3 id="js-api入参说明"><a href="#js-api入参说明" class="header-anchor">#</a> js API入参说明</h3> <p>客户端需要支持的方法</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> appId<span class="token punctuation">,</span> color<span class="token punctuation">,</span> appIcon <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> window<span class="token punctuation">.</span>xm<span class="token punctuation">.</span><span class="token function">native</span><span class="token punctuation">(</span><span class="token string">'getappinfo'</span><span class="token punctuation">)</span>
+</code></pre></div><p>1、订阅</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 需要落库的字段</span>
+<span class="token keyword">const</span> item <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 卡片 id</span>
+    id<span class="token punctuation">,</span>
+    <span class="token comment">// 当前卡片的组件名称，用于订阅后再订阅列表里展示该卡片</span>
+    componentName<span class="token punctuation">,</span>
+    <span class="token comment">// 当前小程序的 appId</span>
+    appId<span class="token punctuation">,</span>
+    <span class="token comment">// 当前小程序的 顶部颜色</span>
+    color<span class="token punctuation">,</span>
+    <span class="token comment">// 当前小程序打开的二级路由页面路径</span>
+    routePath<span class="token punctuation">,</span>
+    <span class="token comment">// 当前卡片的类型</span>
+    type<span class="token punctuation">,</span>
+    <span class="token comment">// 卡片标题</span>
+    label<span class="token punctuation">,</span>
+    <span class="token comment">// 卡片的背景色，默认白色 </span>
+    bgReal<span class="token punctuation">,</span>
+    <span class="token comment">// 卡片标题前的色块颜色，默认 #3b8ff6</span>
+    bg<span class="token punctuation">,</span>
+    <span class="token comment">// 卡片使用了哪些基础组件，没有则不传</span>
+    baseComponentNames<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 基础组件的 dataArr</span>
+    dataArr<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">subscribe</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+</code></pre></div><p>2、取消订阅</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 只需要传卡片id</span>
+<span class="token function">unsubscribe</span><span class="token punctuation">(</span>cardId<span class="token punctuation">)</span>
+</code></pre></div><p>3、发起红灯</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> item <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 卡片类型</span>
+    type<span class="token punctuation">,</span>
+    id
+<span class="token punctuation">}</span>
+<span class="token comment">// 红灯应用的 appId 70640883</span>
+<span class="token comment">// relativeUrl index.html#/page/red-light/page-1588732321267</span>
+<span class="token function">createRedlight</span><span class="token punctuation">(</span>item<span class="token punctuation">,</span> redlightAppId<span class="token punctuation">,</span> relativeUrl<span class="token punctuation">)</span>
+</code></pre></div><p>4、发起督办</p> <blockquote><p>还有哪些参数？</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> item <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 卡片类型</span>
+    type
+<span class="token punctuation">}</span>
+<span class="token comment">// 督办应用的 appId 70640883</span>
+<span class="token comment">// relativeUrl index.html#/page/red-light/page-1588732321267</span>
+<span class="token function">createUrge</span><span class="token punctuation">(</span>item<span class="token punctuation">,</span> urgeAppId<span class="token punctuation">,</span> relativeUrl<span class="token punctuation">)</span>
+</code></pre></div><p>5、圈阅</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> item <span class="token operator">=</span> <span class="token punctuation">{</span>
+    id
+<span class="token punctuation">}</span>
+
+<span class="token function">createSign</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+</code></pre></div><p>6、一键电联</p> <div class="language- extra-class"><pre class="language-text"><code>call(telNumber)
+</code></pre></div><p>7、分享</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> item <span class="token operator">=</span> <span class="token punctuation">{</span>
+    id
+<span class="token punctuation">}</span>
+<span class="token function">share</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+</code></pre></div><p>8、发起预警</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> item <span class="token operator">=</span> <span class="token punctuation">{</span>
+    id<span class="token punctuation">,</span>
+    type
+<span class="token punctuation">}</span>
+<span class="token comment">// warningAppId 预警应用的appId 38842751</span>
+<span class="token comment">// relativeUrl index.html#/page/ioc-warning/page-1590635420653</span>
+<span class="token function">createWarning</span><span class="token punctuation">(</span>item<span class="token punctuation">,</span> warningAppId<span class="token punctuation">,</span> relativeUrl<span class="token punctuation">)</span>
+</code></pre></div><p>9、查看数据来源</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> item <span class="token operator">=</span> <span class="token punctuation">{</span>
+    id
+<span class="token punctuation">}</span>
+<span class="token comment">// 数据来源应用的 appId</span>
+<span class="token function">toDataFrom</span><span class="token punctuation">(</span>item<span class="token punctuation">,</span> appId<span class="token punctuation">)</span>
+</code></pre></div><p>10、查看视频监控</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> item <span class="token operator">=</span> <span class="token punctuation">{</span>
+    id
+<span class="token punctuation">}</span>
+<span class="token comment">// 视频监控应用的 appId</span>
+<span class="token function">openMonitor</span><span class="token punctuation">(</span>item<span class="token punctuation">,</span> appId<span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">6/14/2020, 6:04:57 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/local/base.html" class="prev">
+        开发基础组件
+      </a></span> <span class="next"><a href="/local/card.html">
+        开发业务卡片
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.24af8628.js" defer></script><script src="/assets/js/2.a6fab530.js" defer></script><script src="/assets/js/12.72a6c226.js" defer></script>
+  </body>
+</html>
