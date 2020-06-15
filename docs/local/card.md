@@ -47,14 +47,13 @@ npm run serve
 <html>
     <head>
         <title>小程序卡片开发示例</title>
-        <!-- 小程序 sdk -->
-        <script src="./sdk/xmmp.min.js"></script>
-        <!--本地开发预览需要-->
+        <script src="https://unpkg.com/vue"></script>
+        <script src="https://xm-ioc.netlify.app/sdk/xmmp.min.js"></script>
         <script src="sdk/echarts.min.js"></script>
-        <link rel="stylesheet" href="./sdk/xmbase.css">
-        <link rel="stylesheet" href="./sdk/xmcard.css">
-        <script src="sdk/xmbase.umd.min.js"></script>
-        <script src="sdk/xmcard.umd.min.js"></script>
+        <link rel="stylesheet" href="https://xm-ioc.netlify.app/sdk/xmbase.css">
+        <link rel="stylesheet" href="https://xm-ioc.netlify.app/sdk/xmcard.css">
+        <script src="https://xm-ioc.netlify.app/sdk/xmbase.umd.min.js"></script>
+        <script src="https://xm-ioc.netlify.app/sdk/xmcard.umd.min.js"></script>
     </head>
     <body>
         <div id="app"></div>
@@ -73,9 +72,15 @@ xmmp create card my-card 4092361
 > xmcard-panel 组件是卡片容器 sdk 内置的
 > xmbase-my-test 是上面创建的基础组件
 
-```html
+```vue
 <template>
-    <xmcard-panel>
+    <xmcard-panel
+      :item="{
+        // 参数参考 卡片开发中的各操作项  
+        id: '40173741',
+        componentName: 'yangm-40173741'
+      }"
+    >
         <p>饼图示例</p>
         <xmbase-my-test :data="data" />
     </xmcard-panel>
