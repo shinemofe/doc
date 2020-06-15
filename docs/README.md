@@ -9,8 +9,8 @@
 其中，本地开发依赖的 3 个基础库（会有版本节奏的更新）
 
 - 小程序 sdk  [xmmp.min.js](/sdk/xmmp.min.js) 
-- 卡片基础组件库 [xmbase.min.js](/sdk/xmbase.min.js) [xmbase.css](/sdk/xmbase.css)
-- 卡片容器 sdk [xmcard.min.js](/sdk/xmcard.min.js) [xmcard.css](/sdk/xmcard.css)
+- 卡片基础组件库 [xmbase.umd.min.js](/sdk/xmbase.umd.min.js) [xmbase.css](/sdk/xmbase.css)
+- 卡片容器 sdk [xmcard.umd.min.js](/sdk/xmcard.umd.min.js) [xmcard.css](/sdk/xmcard.css)
 
 ::: tip
 开启 vpn 访问这些资源会更快，如果没有，建议将资源下载到本地 `/public` 目录
