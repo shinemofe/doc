@@ -37,6 +37,13 @@ module.exports = {
         children: [
           '/update/'
         ]
+      },
+      {
+        title: '教程',
+        collapsable: false,
+        children: [
+          '/tutorial/card'
+        ]
       }
     ]
   }
