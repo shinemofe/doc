@@ -68,7 +68,7 @@ require(`./card-collection/${componentName}`)
 启动项目
 
 ```
-npm ru serve
+npm run serve
 ```
 
 i. 运行成功之后，就可以使用在控制台输出的两个地址中的任意一个访问，即可在浏览器中看到效果
