@@ -1,6 +1,4 @@
-### 小程序开发教程
-
-#### 开发小程序卡片
+### 开发小程序卡片
 
 1. 打开后台登录
 
@@ -26,7 +24,7 @@ c. 点击`确定`创建完成
 
 d. 此时在列表中即可看到一个`组件名称`，用来创建单个卡片使用
 
-![Alt text](http://file.iming.work/4d021cde277641ee6c33.png)
+![Alt text](http://file.iming.work/2a6d9d720c7203e82cea.png)
 
 ::: tip 
 接下来会需要node与npm环境，如果未安装，请自己搜索安装 
@@ -34,35 +32,38 @@ d. 此时在列表中即可看到一个`组件名称`，用来创建单个卡片
 为了安装速度，我们会使用cnpm，或者使用淘宝源 
 :::
 
-f. 安装脚手架
+e. 安装脚手架（如果已安装，跳过此步）
 ```bash
 npm i xmmp-cli -g --registry=https://registry.npm.taobao.org
 ```
 
-e. 初始化卡片项目，卡片项目是一类卡片的集合，不用每个卡片单独创建一个项目
+f. 初始化卡片项目，卡片项目是一类卡片的集合，不用每个卡片单独创建一个项目
 ```
-xmmp create card test-collection
-```
-
-e. 接着，复制`组件名称`以图中的`testCard-48547321`为例，初始化单个卡片项目
-
-```
-xmmp card testCard-48547321
+xmmp create card test-card-collection
 ```
 
-![Alt text](http://file.iming.work/5b15f279f36680e69a1c.png)
+![Alt text](http://file.iming.work/cf1993281bfe2af0d214.png)
 
 g. 进入创建好的卡片目录，安装依赖
 ```bash
-cd test-collection
+cd test-card-collection
 cnpm i
 ```
+
+h. 接着，复制`组件名称`以图中的`testCard-40220085`为例，初始化单个卡片项目
+
+```
+xmmp card testCard-40220085
+```
+
+![Alt text](http://file.iming.work/d0f195767eb204c9bcb6.png)
+
 
 i. 修改入口为你新建的卡片，并启动项目
 
 ```js
 // 当前预览的卡片组件名
-const componentName = 'testCard-48547321'
+const componentName = 'testCard-40220085'
 require(`./card-collection/${componentName}`)
 ```
 启动项目
@@ -71,7 +72,8 @@ require(`./card-collection/${componentName}`)
 npm run serve
 ```
 
-i. 运行成功之后，就可以使用在控制台输出的两个地址中的任意一个访问，即可在浏览器中看到效果
+j. 运行成功之后，就可以使用在控制台输出的两个地址中的任意一个访问，即可在浏览器中看到效果
+
 ::: warning 
 点击3个点之后弹出的一些操作，由于调用了客户端的方法，在浏览器上是无法执行的，所以点击无效是正常的 
 :::
@@ -115,5 +117,28 @@ npm run build
 b. 打包单个卡片，以上面创建的卡片为例
 
 ```
-npm run build testCard-48547321
+npm run build testCard-40220085
 ```
+
+打包完成后，会在`zip`文件夹下生成对应的zip包
+
+#### 上传卡片
+
+a. 回到小程序后台，点击**版本管理**
+
+![Alt text](http://file.iming.work/fd033be8c0589796ea54.png)
+
+
+b. 点击**上传版本**按钮，上传打包的卡片包
+
+![Alt text](http://file.iming.work/a092827ddc04bf108f9d.png)
+
+c. 填完必填项后，点击**确定**
+
+![Alt text](http://file.iming.work/96cc23333341faa009e0.png)
+
+d. 可以点击**体验版**，用圳数通App扫描打开的二维码，预览卡片的效果
+
+e. 然后点击**发布**，将卡片发布到线上
+
+到此，小程序卡片创建，开发，打包，上传的流程就算完成了。
