@@ -59,13 +59,14 @@ xmmp card testCard-40220085
 ![Alt text](http://file.iming.work/d0f195767eb204c9bcb6.png)
 
 
-i. 修改入口为你新建的卡片，并启动项目
+i. 修改`src/main.js`中`componentName`为你新建的卡片，并启动项目
 
 ```js
 // 当前预览的卡片组件名
 const componentName = 'testCard-40220085'
 require(`./card-collection/${componentName}`)
 ```
+
 启动项目
 
 ```
@@ -99,7 +100,7 @@ j. 运行成功之后，就可以使用在控制台输出的两个地址中的�
 
 此时在电脑chrome中可以看到打开的小程序webview
 
-点击inscept，打开调试器**（此处可能需要翻墙或者首次打开会比较慢）**
+点击**inscept**，打开调试器**此处可能需要翻墙或者首次打开会比较慢**
 
 在console中输入本机ip的那个访问地址，即可调试
 

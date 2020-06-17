@@ -22,7 +22,7 @@ c. 输入必填项，点击`确定`创建完成
 
 ![Alt text](http://file.iming.work/1c3b5268b62d1c954b5f.png)
 
-d. 此时可以列表中已经新建了一个小程序
+d. 此时可以看到列表中已经新建了一个小程序
 
 ![Alt text](http://file.iming.work/36b3891bb0ceac993d7b.png)
 
@@ -38,7 +38,7 @@ e. 安装脚手架（如果已安装，跳过此步）
 npm i xmmp-cli -g --registry=https://registry.npm.taobao.org
 ```
 
-f. 进入你的开发目录，初始化向程序项目
+f. 进入你的开发目录，初始化小程序项目
 ```bash
 xmmp create mp testMP
 ```
@@ -79,7 +79,7 @@ h. 运行成功之后，就可以使用在控制台输出的两个地址中的�
     <p>Hello World!</p>
     <p>讯盟小程序开发</p>
 
-    <!-- 增加两张卡片 -->
+    <!-- 渲染卡片 -->
     <xmcard-render v-for="id in deps" :key="id" :name="id" />
   </div>
 </template>
@@ -101,7 +101,7 @@ h. 运行成功之后，就可以使用在控制台输出的两个地址中的�
 
 此时在电脑chrome中可以看到打开的小程序webview
 
-点击inscept，打开调试器**（此处可能需要翻墙或者首次打开会比较慢）**
+点击**inscept**，打开调试器**此处可能需要翻墙或者首次打开会比较慢**
 
 在console中输入本机ip的那个访问地址，即可调试
 
@@ -111,6 +111,10 @@ h. 运行成功之后，就可以使用在控制台输出的两个地址中的�
 #### 打包小程序
 
 运行npm命令，打包小程序，会在小程序项目目录下生成一个`dist.zip`的zip包
+
+```bash
+npm run build
+```
 
 ![Alt text](http://file.iming.work/cc2377f774fe625c0ea1.png)
 
