@@ -2,15 +2,15 @@
 
 1. 打开后台登录
 
-后台地址：http://baas.uban360.net:21006/admin/#/login
+后台地址：http://10.253.101.72:21006/admin/#/login
 
-账号/密码：`zhuwei/1234567`
+账号/密码：开发者账号
 
 点击登录
 
 2. 进入小程序卡片后台
 
-地址：http://baas.uban360.net:21006/micro/?#/micro-app/microapp-list
+地址：http://10.253.101.72:21006/micro/?#/micro-app/microapp-list
 
 a. 选择顶部`卡片管理`
 
