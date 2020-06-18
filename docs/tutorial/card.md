@@ -33,8 +33,14 @@ d. 此时在列表中即可看到一个`组件名称`，用来创建单个卡片
 :::
 
 e. 安装脚手架（如果已安装，跳过此步）
+
+推荐使用cnpm来安装依赖
+
 ```bash
-npm i xmmp-cli -g --registry=https://registry.npm.taobao.org
+// 安装cnpm
+npm i cnpm -g --registry=https://registry.npm.taobao.org
+// 安装脚手架
+cnpm i xmmp-cli -g
 ```
 
 f. 初始化卡片项目，卡片项目是一类卡片的集合，不用每个卡片单独创建一个项目

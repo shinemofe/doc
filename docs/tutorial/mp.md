@@ -34,8 +34,14 @@ d. 此时可以看到列表中已经新建了一个小程序
 :::
 
 e. 安装脚手架（如果已安装，跳过此步）
+
+推荐使用cnpm来安装依赖
+
 ```bash
-npm i xmmp-cli -g --registry=https://registry.npm.taobao.org
+// 安装cnpm
+npm i cnpm -g --registry=https://registry.npm.taobao.org
+// 安装脚手架
+cnpm i xmmp-cli -g
 ```
 
 f. 进入你的开发目录，初始化小程序项目
