@@ -42,7 +42,9 @@ module.exports = {
         title: '教程',
         collapsable: false,
         children: [
-          '/tutorial/card'
+          '/tutorial/card',
+          '/tutorial/mp',
+          '/tutorial/admin',
         ]
       }
     ]
