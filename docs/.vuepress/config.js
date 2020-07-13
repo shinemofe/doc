@@ -46,6 +46,13 @@ module.exports = {
           '/tutorial/mp',
           '/tutorial/admin',
         ]
+      },
+      {
+        title: '环境初始化',
+        collapsable: false,
+        children: [
+          '/env-init/'
+        ]
       }
     ]
   }
