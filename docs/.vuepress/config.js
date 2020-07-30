@@ -1,6 +1,6 @@
 module.exports = {
-  title: '讯盟IOC小程序开发手册',
-  description: '讯盟IOC小程序开发手册',
+  title: 'IOC小程序开发手册',
+  description: 'IOC小程序开发手册',
   base: '/',
   themeConfig: {
     lastUpdated: '最后更新时间',
