@@ -4,7 +4,7 @@
 
 审核小程序只有管理员账号才有权限，此时可以切换管理员账号，进入小程序后台
 
-http://10.253.101.72:21006/admin/#/home/index
+http://ip:port/admin/#/home/index
 
 账号密码：管理员账号
 
