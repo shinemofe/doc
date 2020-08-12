@@ -43,8 +43,9 @@ module.exports = {
         collapsable: false,
         children: [
           '/tutorial/card',
-          '/tutorial/mp',
+          '/tutorial/cardmp',
           '/tutorial/admin',
+          '/tutorial/normalmp',
         ]
       },
       {
