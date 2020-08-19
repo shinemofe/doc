@@ -124,7 +124,7 @@ xmmp build
 b. 打包单个卡片，以上面创建的卡片为例
 
 ```
-xmmp testCard-40220085
+xmmp build testCard-40220085
 ```
 
 打包完成后，会在`zip`文件夹下生成对应的zip包
